@@ -1,0 +1,173 @@
+.wrap {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+  }
+  
+  .box {
+    width: calc(20%);
+    margin: 20px 20px;
+  
+    cursor: pointer;
+    color: rgb(7, 6, 6);
+    text-align: center;
+    line-height: 130px;
+  
+    background-color: rgba(235, 92, 116, 0.5);
+  }
+  header {
+    width: 100%;
+    display: block;
+    background: rgb(245, 237, 237);
+    height: 40px;
+    margin-bottom: 4%;
+    color: rgb(3, 0, 0);
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 2px 0px 0px rgba(125, 121, 125, 0.3);
+    /* overflow: hidden; */
+  }
+  /* General style */
+  header h1 {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: auto 10px;
+    line-height: 40px;
+  }
+  header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .scaleX {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .scaleX {
+    transform: scaleX(2);
+  }
+  
+  .scaleY {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .scaleY {
+    transform: scaleY(2);
+  }
+  
+  .scale {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .scale {
+    transform: scale(1.5, 1.5);
+  }
+  
+  .translateX {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .translateX {
+    transform: translateX(2em);
+    transform: translateX(1);
+  }
+  
+  .translateY {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .translateY {
+    transform: translateY(2em);
+  }
+  
+  .translate {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .translate {
+    transform: translate(2em, 2em);
+  }
+  
+  .matrix {
+    transition: transform 0.5s;
+  }
+  
+  .box:hover .matrix {
+    transform: matrix(1, -1, 0, 1, 0, 0);
+    /* matrix ( scalex,skewy,skewx,scaley,translatex,translatey) */
+  }
+  
+  .rotate {
+    transition: transform 0.5s;
+  }
+  
+  .box:hover .rotate {
+    transform: rotate(270deg);
+  }
+  
+  .skew {
+    transition: transform 0.5s;
+  }
+  
+  .box:hover .skew {
+    transform: skew(20deg, 30deg);
+  }
+  
+  .skewX {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .skewX {
+    transform: skewX(50deg);
+  }
+  .skewY {
+    transition: transform 0.5s ease;
+  }
+  .box:hover .skewY {
+    transform: skewY(60deg);
+  }
+  
+  .matrix3d {
+    transform: matrix3d(1);
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .matrix3d {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.9);
+  }
+  
+  .translate3d {
+    transform: translate3d(1px, 1px, 1);
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .translate3d {
+    transform: translate3d(10px, 20px, 60px) rotate3d(1, 2, 2, 90deg);
+  }
+  
+  .rotateY {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .rotateY {
+    transform: rotateY(145deg);
+  }
+  
+  .rotateX {
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover .rotateX {
+    transform: perspective(500px) rotateX(185deg);
+  }
+  
+  .box:hover .rotate3d {
+    transform: rotate3d(3, 2, 2, 90deg);
+    transition: transform 0.5s ease;
+  }
+  
